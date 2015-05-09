@@ -48,6 +48,7 @@ Vector<T>::Vector(const int &i) {
 template <typename T>
 Vector<T>::Vector(const Vector &array) {
     this->size = array.length();
+    this->arr = new T[size];
     for (int i = 0; i < this->size; ++i) {
         this->arr[i] = array.get(i);
     }

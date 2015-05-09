@@ -10,8 +10,9 @@
 
 class NumVector : public Vector<double>{
 public:
-    //NumVector(NumVector&);
-    NumVector(int);
+    NumVector();
+    explicit NumVector(const int&);
+    NumVector(const NumVector&);
     NumVector operator+(NumVector&);//sum
     NumVector operator-(NumVector&);//diff
     double operator*(NumVector&);//scalar product
@@ -19,26 +20,28 @@ public:
     NumVector operator/(double);
     static NumVector unitaryVector(NumVector&);
     static double modVect(NumVector&);
-    static double angle(NumVector&, NumVector&);
+    static double radAngle(NumVector&, NumVector&);
+    static double degAngle(NumVector&, NumVector&);
 };
 #endif //GRAPHS_NUMERICVECTOR_H
 
 NumVector NumVector::operator+(NumVector &b) {
     if(b.length() != this->size) throw new InvalidEntryException();
-    NumVector aux = *(new NumVector(b.length()));
+    NumVector aux = NumVector(b.length());
     for (int i = 0; i < this->size; ++i) {
         aux[i] = this->arr[i] + b[i];
     }
     return aux;
 }
 
-//NumVector::NumVector(NumVector &vector) {
-//    this->size = vector.length();
-//    for (int i = 0; i < this->size; ++i) {
-//        arr[i] = vector[i];
-//    }
-//}
-NumVector::NumVector(int nn) {
+NumVector::NumVector(const NumVector &vector) {
+    this->size = vector.length();
+    this->arr = new double[this->size];
+    for (int i = 0; i < this->size; ++i) {
+        arr[i] = vector.get(i);
+    }
+}
+NumVector::NumVector(const int &nn) {
     this->size = nn;
     this->arr = new double[nn];
 }
@@ -90,7 +93,15 @@ NumVector NumVector::unitaryVector(NumVector &vect) {
     return vect/modVect(vect);
 }
 
-double NumVector::angle(NumVector &vector1, NumVector &vector2) {
+double NumVector::radAngle(NumVector &vector1, NumVector &vector2) {
     double cosX = (vector1*vector2)/(modVect(vector1)*modVect(vector2));
     return acos(cosX);
+}
+
+NumVector::NumVector() {
+    this->size = 0;
+}
+
+double NumVector::degAngle(NumVector &vector1, NumVector &vector2) {
+    return radAngle(vector1,vector2) * 180 / 3.14159265 ;
 }
