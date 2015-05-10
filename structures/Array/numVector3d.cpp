@@ -4,7 +4,7 @@
 
 #include "numVector3d.h"
 
-numVector3d numVector3d::scalarProduct(numVector3d &v2) {
+numVector3d numVector3d::vectorProduct(numVector3d &v2) {
     numVector3d a = numVector3d();
     a[0] = ((this->get(1)*v2[2])-( v2[1]*this->get(2)));
     a[1] = ((this->get(0)*v2[2])-( v2[0]*this->get(2)));

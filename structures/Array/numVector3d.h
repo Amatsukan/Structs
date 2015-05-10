@@ -10,7 +10,7 @@
 class numVector3d : public NumVector {
 public:
     numVector3d();
-    numVector3d scalarProduct (numVector3d&);
+    numVector3d vectorProduct(numVector3d &);
 };
 
 
