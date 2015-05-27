@@ -16,7 +16,7 @@ public:
     Vector();
     Vector(const Vector &);
     virtual ~Vector();
-    T get(const int&) const;
+    T at(const int &) const;
     void set(const int&, const T&);
     T& operator[] (int);
     Vector & operator= (const Vector &);
@@ -28,79 +28,79 @@ public:
     friend std::ostream& operator<< (std::ostream&, Vector<U>&);
 
 protected:
-    T* arr;
-    int size;
+    T* _arr;
+    int _size;
 
 };
 
 #endif //GRAPHS_ARRAY_H
-template <typename T>
-Vector<T>::Vector() {
-    size = 0;
-}
 
 template <typename T>
-Vector<T>::Vector(const int &i) {
-    this->size = i;
-    this->arr = new T[this->size];
-}
+Vector<T>::Vector() :
+    _arr(0), _size(0)
+{}
 
 template <typename T>
-Vector<T>::Vector(const Vector &array) {
-    this->size = array.length();
-    this->arr = new T[size];
-    for (int i = 0; i < this->size; ++i) {
-        this->arr[i] = array.get(i);
+Vector<T>::Vector(const int &i) :
+    _size(i), _arr(new T[_size])
+{}
+
+template <typename T>
+Vector<T>::Vector(const Vector &array) :
+    _size(array.length()), _arr(new T[_size])
+{
+    for (int i = 0; i <_size; ++i) {
+        _arr[i] = array.at(i);
     }
 }
 
 template <typename T>
-T Vector<T>::get(const int &i) const {
-    if(i >= this->size or i< 0) throw OutOfBoundsException();
+T Vector<T>::at(const int &i) const {
+    if(i >= _size or i< 0) throw OutOfBoundsException();
 
-    return arr[i];
+    return _arr[i];
 }
 
 template <typename T>
 void Vector<T>::set(const int &i, const T &t) {
-    if(i >= this->size or i< 0) throw new OutOfBoundsException();
+    if(i >= _size or i< 0) throw new OutOfBoundsException();
 
-    arr[i] = t;
+    _arr[i] = t;
 }
 
 template <class T>
 T& Vector<T>::operator[] (int index) {
-    if(index >= this->size or index < 0) throw new OutOfBoundsException();
-    return arr[index];
+    if(index >= _size or index < 0) throw new OutOfBoundsException();
+    return _arr[index];
 }
+
 template <typename T>
 Vector<T> &Vector<T>::operator=(const Vector &array) {
     Vector<T> & aux = *(new Vector(array));
     return aux;
 }
+
 template <typename T>
 Vector<T>::~Vector() {
-    delete [] arr;
+    delete [] _arr;
 }
+
 template <typename T>
 bool Vector<T>::operator!=(const Vector &a) {
-    bool ret = true;
-    for (int i = 0; i < size; ++i) {
-        if(a[i] == this->arr[i]) ret = false;
-    }
-    return ret;
+    return not(operator==(a));
 }
+
 template <typename T>
 bool Vector<T>::operator==(const Vector &a) {
-    for (int i = 0; i < size; ++i) {
-        if(a[i] != this->arr[i]) return false;
+    for (int i = 0; i < _size; ++i) {
+        if (a[i] != _arr[i]) return false;
     }
     return true;
 }
 
 template <typename T>
 int Vector<T>::length() const{
-    return this->size;
+    return _size;
 }
 
 template <class T>
