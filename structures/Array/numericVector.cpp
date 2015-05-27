@@ -3,48 +3,47 @@
 #include "numericVector.h"
 
 NumVector NumVector::operator+(NumVector &b) {
-    if(b.length() != this->size) throw new InvalidEntryException();
+    if(b.length() != _size) throw new InvalidEntryException();
     NumVector aux = NumVector(b.length());
-    for (int i = 0; i < this->size; ++i) {
-        aux[i] = this->arr[i] + b[i];
+    for (int i = 0; i < _size; ++i) {
+        aux[i] = _arr[i] + b[i];
     }
     return aux;
 }
 
-NumVector::NumVector(const NumVector &vector) {
-    this->size = vector.length();
-    this->arr = new double[this->size];
-    for (int i = 0; i < this->size; ++i) {
-        arr[i] = vector.get(i);
+NumVector::NumVector(const NumVector &vector):
+       Vector<double>(vector.length())
+{
+    for (int i = 0; i < _size; ++i) {
+        _arr[i] = vector.at(i);
     }
 }
-NumVector::NumVector(const int &nn) {
-    this->size = nn;
-    this->arr = new double[nn];
-}
+NumVector::NumVector(const int &nn) :
+    Vector<double>(nn)
+{}
 
 NumVector NumVector::operator-(NumVector &b) {
-    if(b.length() != this->size) throw new InvalidEntryException();
+    if(b.length() != _size) throw new InvalidEntryException();
     NumVector aux =  NumVector(b.length());
-    for (int i = 0; i < this->size; ++i) {
-        aux[i] = this->arr[i] - b[i];
+    for (int i = 0; i < _size; ++i) {
+        aux[i] = _arr[i] - b[i];
     }
     return aux;
 }
 
 double NumVector::operator*(NumVector &vector) {
-    if(vector.length() != this->size) throw new InvalidEntryException();
+    if(vector.length() != _size) throw new InvalidEntryException();
     double aux =  0;
-    for (int i = 0; i < this->size; ++i) {
-        aux += this->arr[i] * vector[i];
+    for (int i = 0; i < _size; ++i) {
+        aux += _arr[i] * vector[i];
     }
     return aux;
 }
 
 NumVector NumVector::operator*(double d) {
-    NumVector aux = NumVector(this->length());
-    for (int i = 0; i < this->size; ++i) {
-        aux[i] = this->arr[i] * d;
+    NumVector aux = NumVector(length());
+    for (int i = 0; i < _size; ++i) {
+        aux[i] = _arr[i] * d;
     }
     return aux;
 }
@@ -58,9 +57,9 @@ double NumVector::modVect(NumVector &vect) {
 }
 
 NumVector NumVector::operator/(double d) {
-    NumVector aux = NumVector(this->length());
-    for (int i = 0; i < this->size; ++i) {
-        aux[i] = this->arr[i] / d;
+    NumVector aux = NumVector(length());
+    for (int i = 0; i < _size; ++i) {
+        aux[i] = _arr[i] / d;
     }
     return aux;
 }
@@ -75,8 +74,9 @@ double NumVector::radAngle(NumVector &vector1, NumVector &vector2) {
     return acos(cosX);
 }
 
-NumVector::NumVector() {
-    this->size = 0;
+NumVector::NumVector():
+        Vector(0)
+{
 }
 
 double NumVector::degAngle(NumVector &vector1, NumVector &vector2) {
