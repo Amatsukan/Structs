@@ -1,0 +1,488 @@
+The system is: FreeBSD - 10.1-RELEASE-p10 - amd64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/usr/home/jake/Structs/cmake/CMakeFiles/3.1.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/CC 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/usr/home/jake/Structs/cmake/CMakeFiles/3.1.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec1378299484/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec1378299484.dir/build.make CMakeFiles/cmTryCompileExec1378299484.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1378299484.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1378299484.dir/testCCompiler.c.o   -c /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1378299484
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1378299484.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec1378299484.dir/testCCompiler.c.o  -o cmTryCompileExec1378299484  
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec2238111050/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec2238111050.dir/build.make CMakeFiles/cmTryCompileExec2238111050.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2238111050
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2238111050.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2238111050   
+FreeBSD clang version 3.4.1 (tags/RELEASE_34/dot1-final 208032) 20140512
+Target: x86_64-unknown-freebsd10.1
+Thread model: posix
+Selected GCC installation: 
+ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTryCompileExec2238111050 /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec2238111050/fast"]
+  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec2238111050.dir/build.make CMakeFiles/cmTryCompileExec2238111050.dir/build]
+  ignore line: [gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2238111050]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2238111050.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2238111050   ]
+  ignore line: [FreeBSD clang version 3.4.1 (tags/RELEASE_34/dot1-final 208032) 20140512]
+  ignore line: [Target: x86_64-unknown-freebsd10.1]
+  ignore line: [Thread model: posix]
+  ignore line: [Selected GCC installation: ]
+  link line: [ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTryCompileExec2238111050 /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/libexec/ld-elf.so.1] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2238111050] ==> ignore
+    arg [/usr/lib/crt1.o] ==> ignore
+    arg [/usr/lib/crti.o] ==> ignore
+    arg [/usr/lib/crtbegin.o] ==> ignore
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTryCompileExec2238111050.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/crtend.o] ==> ignore
+    arg [/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec2608876679/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec2608876679.dir/build.make CMakeFiles/cmTryCompileExec2608876679.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2608876679.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec2608876679.dir/feature_tests.c.o   -c /usr/home/jake/Structs/cmake/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec2608876679
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2608876679.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec2608876679.dir/feature_tests.c.o  -o cmTryCompileExec2608876679  
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:0c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec1542523414/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec1542523414.dir/build.make CMakeFiles/cmTryCompileExec1542523414.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1542523414.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec1542523414.dir/feature_tests.c.o   -c /usr/home/jake/Structs/cmake/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1542523414
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1542523414.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec1542523414.dir/feature_tests.c.o  -o cmTryCompileExec1542523414  
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:0c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec3980229438/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec3980229438.dir/build.make CMakeFiles/cmTryCompileExec3980229438.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3980229438.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec3980229438.dir/feature_tests.c.o   -c /usr/home/jake/Structs/cmake/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3980229438
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3980229438.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec3980229438.dir/feature_tests.c.o  -o cmTryCompileExec3980229438  
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec2496923192/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec2496923192.dir/build.make CMakeFiles/cmTryCompileExec2496923192.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2496923192.dir/testCXXCompiler.cxx.o
+/usr/bin/CC     -o CMakeFiles/cmTryCompileExec2496923192.dir/testCXXCompiler.cxx.o -c /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2496923192
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2496923192.dir/link.txt --verbose=1
+/usr/bin/CC       CMakeFiles/cmTryCompileExec2496923192.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2496923192  
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec1731098224/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec1731098224.dir/build.make CMakeFiles/cmTryCompileExec1731098224.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/CC     -o CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1731098224
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1731098224.dir/link.txt --verbose=1
+/usr/bin/CC      -v CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1731098224   
+FreeBSD clang version 3.4.1 (tags/RELEASE_34/dot1-final 208032) 20140512
+Target: x86_64-unknown-freebsd10.1
+Thread model: posix
+Selected GCC installation: 
+ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTryCompileExec1731098224 /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec1731098224/fast"]
+  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec1731098224.dir/build.make CMakeFiles/cmTryCompileExec1731098224.dir/build]
+  ignore line: [gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/CC     -o CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1731098224]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1731098224.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/CC      -v CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1731098224   ]
+  ignore line: [FreeBSD clang version 3.4.1 (tags/RELEASE_34/dot1-final 208032) 20140512]
+  ignore line: [Target: x86_64-unknown-freebsd10.1]
+  ignore line: [Thread model: posix]
+  ignore line: [Selected GCC installation: ]
+  link line: [ "/usr/bin/ld" --eh-frame-hdr -dynamic-linker /libexec/ld-elf.so.1 --hash-style=both --enable-new-dtags -o cmTryCompileExec1731098224 /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/crtbegin.o -L/usr/lib CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/crtend.o /usr/lib/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/libexec/ld-elf.so.1] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec1731098224] ==> ignore
+    arg [/usr/lib/crt1.o] ==> ignore
+    arg [/usr/lib/crti.o] ==> ignore
+    arg [/usr/lib/crtbegin.o] ==> ignore
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTryCompileExec1731098224.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/crtend.o] ==> ignore
+    arg [/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [c++;m;c]
+  implicit dirs: [/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1y] compiler features compiled with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec1181120192/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec1181120192.dir/build.make CMakeFiles/cmTryCompileExec1181120192.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1181120192.dir/feature_tests.cxx.o
+/usr/bin/CC    -std=c++1y -o CMakeFiles/cmTryCompileExec1181120192.dir/feature_tests.cxx.o -c /usr/home/jake/Structs/cmake/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec1181120192
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1181120192.dir/link.txt --verbose=1
+/usr/bin/CC       CMakeFiles/cmTryCompileExec1181120192.dir/feature_tests.cxx.o  -o cmTryCompileExec1181120192  
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec4007116339/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec4007116339.dir/build.make CMakeFiles/cmTryCompileExec4007116339.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4007116339.dir/feature_tests.cxx.o
+/usr/bin/CC    -std=c++11 -o CMakeFiles/cmTryCompileExec4007116339.dir/feature_tests.cxx.o -c /usr/home/jake/Structs/cmake/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec4007116339
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4007116339.dir/link.txt --verbose=1
+/usr/bin/CC       CMakeFiles/cmTryCompileExec4007116339.dir/feature_tests.cxx.o  -o cmTryCompileExec4007116339  
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTryCompileExec2921365437/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTryCompileExec2921365437.dir/build.make CMakeFiles/cmTryCompileExec2921365437.dir/build
+gmake[1]: Entering directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2921365437.dir/feature_tests.cxx.o
+/usr/bin/CC    -std=c++98 -o CMakeFiles/cmTryCompileExec2921365437.dir/feature_tests.cxx.o -c /usr/home/jake/Structs/cmake/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2921365437
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2921365437.dir/link.txt --verbose=1
+/usr/bin/CC       CMakeFiles/cmTryCompileExec2921365437.dir/feature_tests.cxx.o  -o cmTryCompileExec2921365437  
+gmake[1]: Leaving directory `/usr/home/jake/Structs/cmake/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates

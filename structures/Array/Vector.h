@@ -42,7 +42,7 @@ Vector<T>::Vector() :
 
 template <typename T>
 Vector<T>::Vector(const int &i) :
-    _size(i), _arr(new T[_size])
+    _size(i), _arr(new T[i])
 {}
 
 template <typename T>
